@@ -8,12 +8,11 @@ describe('Date to Position Tests', () => {
         expect(typeof positionsObject).toBe('object');
     });
 
-    //test('Date is not Passed', () => {
-        //var positionsObject = dateToPosition("bubbles");   
-        //expect(() => {
-        
-      //  }).toThrowError('Function expects date');
-    //});
+    test('Date is not Passed', () => { 
+        expect(() => {
+            dateToPosition("bubbles")
+        }).toThrowError('Function expects date');
+    });
 
     test('Returns hours position', () => {
         const myDate = new Date(2019,5,21,8,0,0,0);
