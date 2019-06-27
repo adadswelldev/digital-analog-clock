@@ -1,12 +1,6 @@
 const dateToPosition = require('../date-to-position')
 
 describe('Date to Position Tests', () => {
-    
-    test('Returns object', () => {
-        const myDate = new Date(2019,5,21,1,0,0,0);
-        var positionsObject = dateToPosition(myDate);   
-        expect(typeof positionsObject).toBe('object');
-    });
 
     test('Date is not Passed', () => { 
         expect(() => {
