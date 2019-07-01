@@ -1,13 +1,5 @@
-module.exports = (date) => {
-
-    function checkTypeIsDate(d) {
-        if (Object.prototype.toString.call(d) === "[object Date]") {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
+module.exports.dateToPosition = (date) => {
+    
     if (checkTypeIsDate(date) === false) {
         throw "Function expects date";
     }
@@ -19,4 +11,12 @@ module.exports = (date) => {
     };
 
     return positions;
+}
+
+function checkTypeIsDate(d) {
+    if (Object.prototype.toString.call(d) === "[object Date]") {
+        return true;
+    } else {
+        return false;
+    }
 }
