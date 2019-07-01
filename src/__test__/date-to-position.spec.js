@@ -1,4 +1,4 @@
-const dateToPosition = require('../date-to-position')
+const dateToPosition = require('../date-to-position');
 
 describe('Date to Position Tests', () => {
 
